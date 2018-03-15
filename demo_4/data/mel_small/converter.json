@@ -1,0 +1,8 @@
+{
+  "type":  "MelodyConverter",
+  "args": {
+    "minPitch": 21,
+    "maxPitch": 108,
+    "numSteps": 32
+  }
+}

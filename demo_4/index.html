@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Melody Mixer</title>
+    <meta name="description" content="Melody Mixer">
+    <meta content="A fun way to explore melodies using machine learning." name="description">
+    <meta content="Melody Mixer" property="og:title">
+    <meta content="./data/images/melody-mixer-og2.jpeg" property="og:image">
+    <meta content="A fun way to explore melodies using machine learning." property="og:description">
+    <meta content="summary" name="twitter:card">
+    <meta name="twitter:title" content="Melody Mixer" />
+    <meta name="twitter:description" content="A fun way to explore melodies using machine learning." />
+    <meta name="twitter:image" content="./data/images/melody-mixer-og2.jpeg" />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86665855-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-86665855-4', {
+            'referrer' : document.referrer.split('?')[0],
+        });
+    </script>
+    
+    <script language="javascript" type="text/javascript" src="https://storage.googleapis.com/melody-mixer/musicvae.js"></script>
+    <script language="javascript" type="text/javascript" src="./libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="./libraries/tone.js"></script>
+    <script language="javascript" type="text/javascript" src="./preset-melodies.js"></script>
+    <script language="javascript" type="text/javascript" src="https://storage.googleapis.com/melody-mixer/StartAudioContext.js"></script>
+    <link href="/data/images/favicon-melody-mixer-small.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/data/images/favicon-melody-mixer.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="splash">
+        <div class="splash-wrapper">
+            <img class="splash-icon" src="./data/images/melody-mixer.gif" width="375" height="auto" alt="Melody Mixer icon"/>
+            <h1>MELODY MIXER</h1>
+            <div class="device-supported">
+                <p class="splash-description">A fun way to explore music using machine learning. 
+                    <br/>Just pull the blocks apart to see what melodies you discover.
+                </p>
+                <button class="splash-play-button" id="splash-play-button" onclick="onPlay();" disabled>LOADING...</button>
+                <p class="splash-description">
+                </p>
+                <p class="built-with">
+                    Built with deeplearn.js + p5.js + musicvae.js.
+                    <br/> Learn more about <a class ="about" target="_blank" href="https://medium.com/@torinblankensmith/how-to-blend-melodies-with-machine-learning-in-real-time-in-the-browser-8ad5b42b4d0b">how it works.</a>
+                </p>
+
+            </div>
+            <p class="device-not-supported" style="display: none">Sorry, looks like your browser or device doesn't support this experiment.
+                Learn more about Melody Mixer
+                <a target="_blank" href="https://medium.com/@torinblankensmith/how-to-blend-melodies-with-machine-learning-in-real-time-in-the-browser-8ad5b42b4d0b">here</a>.
+                Or try visiting this site on a desktop computer in a browser like Chrome.</p>
+        </div>
+        <div class="badge-wrapper">
+            <a class="ai-experiment badge" href="https://aiexperiments.withgoogle.com" target="_blank" ></a>
+            <div class="badge-break"></div>
+            <a class="google-friends badge" href="https://aiexperiments.withgoogle.com" target="_blank"></a>
+            <div class="badge-break"></div>
+            <a class="magenta-link badge" href="https://magenta.tensorflow.org/" target="_blank" >
+                <div class="magenta-logo"></div>
+                <div class="magenta-text">Built using <span>Magenta</span>
+                </div>
+            </a>
+        </div>
+        <div class="splash-privacy">
+            <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy &amp; </a>
+            <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a>
+        </div>
+    </section>
+
+    <a class="about-button" target="_blank" href="https://medium.com/@torinblankensmith/how-to-blend-melodies-with-machine-learning-in-real-time-in-the-browser-8ad5b42b4d0b"></a>
+    <div class="control-container">
+        <div class="drop-down-container">
+          <select name="melody-one" class="drop-down">
+              <option>Melody 1</option>
+          </select>
+          <label for="melody-one">Melody 1</label>
+        </div>
+        <button class="play-pause-button"></button>
+        <div class="drop-down-container">
+          <select name="melody-two" class="drop-down">
+              <option>Melody 2</option>
+          </select>
+          <label for="melody-two">Melody 2</label>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="demo_4.js"></script>
+</body>
+</html>
