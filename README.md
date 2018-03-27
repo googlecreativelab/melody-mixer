@@ -1,5 +1,5 @@
 # Melody Mixer Demos
-Meldoy Mixer is a series of short demos, each building on the last showing how to use Magenta's new machine learning library [MusicVAE.js](https://github.com/tensorflow/magenta/tree/master/magenta/models/music_vae/js) to blend between melodies in real time in the browser, as well as visualize the melodies with [p5.js](https://p5js.org/), and play back the melodies using [Tone.js](https://tonejs.github.io/).
+Meldoy Mixer is a series of short demos, each building on the last showing how to use Magenta's new machine learning library [MusicVAE.js](https://goo.gl/magenta/musicvae-js) to blend between melodies in real time in the browser, as well as visualize the melodies with [p5.js](https://p5js.org/), and play back the melodies using [Tone.js](https://tonejs.github.io/).
 
 For a step by step guide on how build Melody Mixer check out the [blogpost](https://goo.gl/sW5QrS ).
 
@@ -17,7 +17,7 @@ Demo4: Add interaction with P5.js(this is the live melodymixer website)
 Each folder includes all of the files necessary to run, just [start a static file server](https://github.com/processing/p5.js/wiki/Local-server) and click on the demo.
 
 ## Contributors
-Made by: [Torin Blankensmith](http://torinblankensmith.webflow.io/), and [Kyle Phillips](http://haptic-data.com) in collaboration [Adam Roberts](https://github.com/adarob) from the Magenta team and built with friends at the Google Creative Lab.
+Made by: [Torin Blankensmith](http://torinblankensmith.com), and [Kyle Phillips](http://haptic-data.com) in collaboration [Adam Roberts](https://github.com/adarob) from the Magenta team and built with friends at the Google Creative Lab.
 
 ## License
 Copyright 2017 Google Inc.
